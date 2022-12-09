@@ -28,7 +28,7 @@ const router = express.Router();
 
 router.post("/register", register);
 router.post("/activate", authUser, activateAccout);
-router.post("/login", login);
+router.post("/trueshare/login", login);
 router.post("/sendVerification", authUser, sendVerification);
 router.get("/getProfile/:username", authUser, getProfile);
 router.put("/updateProfilePicture", authUser, updateProfilePicture);
