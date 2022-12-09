@@ -5,7 +5,7 @@ const imageUpload = require('../middlewares/imageUpload');
 
 const router = express.Router();
 
-router.post('/uploadImages',authUser,imageUpload,uploadImages)
-router.post('/listImages',authUser,listImages)
+router.post('/trueshare/uploadImages',authUser,imageUpload,uploadImages)
+router.post('/trueshare/listImages',authUser,listImages)
 
 module.exports = router
