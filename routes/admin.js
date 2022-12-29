@@ -4,10 +4,10 @@ const { authAdmin } = require("../middlewares/auth");
 
 const router = express.Router();
 
-router.post("/trueshare/adminRegister", adminRegister);
-router.post("/trueshare/admin/adminLogin", adminLogin);
-router.get("/trueshare/admin/getAllUsers",authAdmin, getAllUsers);
-router.put("/trueshare/admin/blockUser",authAdmin, blockUser);
-router.get("/trueshare/admin/getAllPosts",authAdmin,getAllPosts)
+router.post("/adminRegister", adminRegister);
+router.post("/admin/adminLogin", adminLogin);
+router.get("/admin/getAllUsers",authAdmin, getAllUsers);
+router.put("/admin/blockUser",authAdmin, blockUser);
+router.get("/admin/getAllPosts",authAdmin,getAllPosts)
 
 module.exports = router;

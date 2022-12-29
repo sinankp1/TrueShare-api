@@ -4,7 +4,7 @@ const { authUser } = require("../middlewares/auth");
 
 const router = express.Router();
 
-router.post("/trueshare/messages", AddNewMessage);
-router.get("/trueshare/messages/:conversationId", getMessages);
+router.post("/messages", AddNewMessage);
+router.get("/messages/:conversationId", getMessages);
 
 module.exports = router;

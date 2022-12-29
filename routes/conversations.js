@@ -4,8 +4,8 @@ const { authUser } = require("../middlewares/auth");
 
 const router = express.Router();
 
-router.post("/trueshare/conversation/",newConversation)
-router.get("/trueshare/conversation/:userId",getConversation)
-router.get("/trueshare/conversation/find/:firstId/:secondId",findChat)
+router.post("/conversation/",newConversation)
+router.get("/conversation/:userId",getConversation)
+router.get("/conversation/find/:firstId/:secondId",findChat)
 
 module.exports = router;

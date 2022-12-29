@@ -4,12 +4,12 @@ const { authUser, authAdmin } = require('../middlewares/auth');
 
 const router = express.Router();
 
-router.post('/trueshare/createPost',authUser,createPost)
-router.get('/trueshare/getAllPost',authUser,getAllPost)
-router.put('/trueshare/comment',authUser,comment)
-router.put('/trueshare/savePost/:id',authUser,savePost)
-router.delete('/trueshare/deletePost/:id',authUser,deletePost)
-router.delete('/trueshare/adminDeletePost/:id',authAdmin,deletePost)
+router.post('/createPost',authUser,createPost)
+router.get('/getAllPost',authUser,getAllPost)
+router.put('/comment',authUser,comment)
+router.put('/savePost/:id',authUser,savePost)
+router.delete('/deletePost/:id',authUser,deletePost)
+router.delete('/adminDeletePost/:id',authAdmin,deletePost)
 
 
 module.exports = router
